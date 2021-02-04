@@ -1,0 +1,70 @@
+<!-- OwnerName, OwnerPhone, OwnerEmail, OwnerPassword -->
+<div style="margin-top: 0%;" class="fluid-container">
+<div class="form">
+
+<div class="row">
+
+    <div class="col-md-4"></div>
+
+    <div class="col-md-4 border">
+        <div class="form-group">
+            <label for="">Name</label>
+            <input required [(ngModel)] = 'name' type="text" class="form-control" placeholder="Enter Your Name">
+        </div>
+    <br>
+
+    
+        <div class="form-group">
+            <label for="">Email</label>
+            <input required [(ngModel)] = 'email' type="email" class="form-control" placeholder="email@test.com">
+        </div>
+    
+        <br>
+    
+        <div class="form-group">
+            <label for="">Phone Number</label>
+            <input required [(ngModel)] = 'phone' type="number" class="form-control" placeholder="Enter Mobile Number">
+        </div>
+    
+        <br>
+    
+        <div class="form-group">
+            <label for="">Password</label>
+            <input [(ngModel)] = 'password' type="password" class="form-control" placeholder="Enter Your Password">
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="">City</label>
+            <input required [(ngModel)] = 'city' type="text" class="form-control" placeholder="Enter Your City">
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="">Address</label>
+            <input [(ngModel)] = 'address' type="text" class="form-control" placeholder="Enter Your Address">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="">Role</label>
+                <select [(ngModel)]="role"  class="form-control">
+                    <option value="Customer" selected>CUSTOMER</option>
+                    <option value="Owner">OWNER</option>
+                    <option value="Admin">ADMIN</option>
+                </select> 
+        </div> 
+<hr>
+        <div class="form-group">
+            <button (click) = "signup()" class="btn btn-success">Sign Up</button>
+            &nbsp;&nbsp; 
+            <a class="btn btn-info float-right" routerLink="/login">Sign-In</a>
+        </div>
+    </div>
+
+    <div class="col-md-4"></div>
+
+</div>
+
+</div>
+
+</div>

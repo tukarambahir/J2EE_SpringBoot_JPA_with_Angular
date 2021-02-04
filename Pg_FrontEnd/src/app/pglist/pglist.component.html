@@ -1,0 +1,33 @@
+<div class="container">
+    <div style="height:500px"class="col-md-12">
+      <div class="row">
+        <div class="col-md-12"style="margin-top:20px;" *ngFor="let pg of pgs | async; ; let i = index">
+          <div style="height:600px"class="card">
+            <!-- <img class="card-img-top" src="http://localhost:3000/pg/image/{{pg['image']}}" alt="">  -->
+            <div class="card-body">
+              <h5 style="font-size: 25px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode';font-weight: bolder;"class="card-title">{{i+1}} : {{pg['pgName']}}</h5>
+             <div class="zolo-img"> <img src="./../../assets/room2.jpg" alt=""> 
+              </div>
+              </div>
+              <div class="card-footer">
+              <div style="margin-top: 10px;"></div>
+              <div class="rent"><strong>Rent: </strong>{{pg['pgRent']}}</div>
+              
+    
+              <div style="margin-top: 10px;"class="number"><strong>Owner-Number: </strong>{{pg['phoneNo']}}
+            </div>
+            <span>
+              <strong>City: </strong> {{pg['city']}}&nbsp;&nbsp;
+              <strong>Address: </strong> {{pg['address']}}&nbsp;&nbsp;
+              <strong>Address: </strong> {{pg['landmark']}}
+            </span>
+            <div class="col-6" style="margin-top: 5px;">
+                <button (click) ='book(pg)' class="btn btn-outline-success">Book</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+    </div>

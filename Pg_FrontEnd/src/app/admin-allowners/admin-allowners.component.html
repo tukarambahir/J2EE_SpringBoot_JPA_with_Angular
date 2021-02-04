@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Owners List</h3>
+    </div>
+
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+
+            <thead class="thead-dark">
+                <tr>
+                    <th>Owner Id</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>City</th>
+                    <th>Address</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr style="text-align: center;" *ngFor = "let owner of owners" >
+
+                    <td>{{owner['ownerId']}}</td>
+                    <td>{{owner['name']}}</td>
+                    <td>{{owner['phone']}}</td>
+                    <td>{{owner['email']}}</td>
+                    <td>{{owner['password']}}</td>
+                    <td>{{owner['city']}}</td>
+                    <td>{{owner['address']}}</td>
+                   <td>
+                       <button (click) = "getHisPgs(owner.ownerId)" class="btn btn-success">See Owned PG</button>
+&nbsp;
+                   </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+</div>

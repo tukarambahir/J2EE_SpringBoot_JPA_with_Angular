@@ -1,0 +1,26 @@
+.form{
+    margin: 15px;
+    margin-top: 20px;
+    background-color:wheat;
+    padding: 15px;
+}
+
+h3{
+    margin: 15px; 
+    background-color: #061644;
+    color: #ECEEFE;
+    padding: 15px;
+}
+
+label{
+    color: black;
+    font-weight: bolder;
+}
+
+.btn-outline-success{
+    border-radius: 2 !important;
+    background-color: #2A2A2A !important ;
+    color: white !important;
+    opacity: 0.9;
+   
+}

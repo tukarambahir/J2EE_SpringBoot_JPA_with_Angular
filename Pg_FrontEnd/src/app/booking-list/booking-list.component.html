@@ -1,0 +1,60 @@
+<div style="margin-top: 0%;" class="card">
+    <div style="background-color: dodgerblue;color:ghostwhite"class="card-header">Booking List&nbsp; <img src="https://img.icons8.com/emoji/48/000000/bed-emoji.png"/></div>
+    <div class="card-body">
+        <table style="border-radius: 10px;"class="table table-primary table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Booking No.</th>
+                    <th>Pg Name</th>
+                    <th>Pg City</th>
+                    <th>Confirmation Status</th>
+                    <th>Check In Date</th>
+                    <th>Check Out Date</th>
+                    <th>Room Type</th>
+                    <th>Total Bookings</th>
+                    <th>Action</th>
+                    <!-- <th>Proceed to Payment</th> -->
+                </tr>
+
+            </thead>
+            <tbody>
+                
+                <tr *ngFor="let bookings of bookDeets;let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{bookings.bookedPg.pgName}}</td>
+                    <td>{{bookings.bookedPg.city}}</td>
+                    <td>Confirm</td>
+                    <td>{{bookings['checkInDate']}}</td>
+                    <td>{{bookings['checkOutDate']}}</td>
+                    <td>{{bookings['roomType']}}</td>
+                    <td>{{bookings['noOfBookings']}}</td>
+                    <td><button (click)="onDelete(bookings)" style="background-color: red;border-radius: 10px;color: white;"class=btn btn-success btn-sm>Cancel</button></td>
+                    <!-- <td><button (click)="onConfirm(bookings)" style="background-color: teal;border-radius: 10px;color: white;"class=btn btn-success btn-sm>Confirm</button></td> -->
+
+                   
+                    <!-- <td><button 
+                        (click)="toggleActiveStatus(booking)"
+                        [class.btn-success]="booking['ConfirmationStatus'] == 1"
+                        [class.btn-danger]="booking['ConfirmationStatus'] == 0"
+                        class="btn btn-sm">{{Booking['ConfirmationStatus'] == 1 ? 'Activate' : 'Deactive'}}</button></td> -->
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<h6 style="margin-top: 40px;">Note:</h6>
+
+<div class=box style="border:solid black 1px;width:400px;border-radius: 7px;font-size: 13px;padding: 5px">
+
+
+<span style="color: red;font-size: 15px">*</span>
+If you want to confirm your bookings you have to pay the Deposit for respective Pg online.
+<div>Click on confirm to redirect to Transaction page and pay deposit e.g 5000/-,8000/-.</div>
+<div style="font-weight: bold;">We always want the Best for you.      Booyah!!</div>
+
+</div>
+
+<hr><div style="text-align: center;background-color: rgb(31, 30, 30);height: 60px;line-height: 60px;color:rgb(100, 100, 100);float: 100px;margin-top: 150px;width:100%;margin-left: -6px;">TMN Stay @All RIghts Reserved</div>

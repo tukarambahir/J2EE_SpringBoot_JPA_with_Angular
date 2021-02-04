@@ -1,0 +1,51 @@
+<div class="container">
+    <span class="booklogo">
+    New Booking&nbsp;<img src="https://img.icons8.com/fluent/48/000000/add-ticket.png"/>
+</span>
+    <div class="card">
+        <div class="card-header">New Booking </div>
+        <div class="card-body">
+            <div class="form">
+                <div class="form-group">
+                    <label for="">Check In Date</label>
+                    <input [(ngModel)]="booking['checkInDate']" type="date" class="form-control" required>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="">Check In Time</label>
+                    <input [(ngModel)]="booking['checkInTime']" type="time" class="form-control">
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="">Check Out Date</label>
+                    <input [(ngModel)]="booking['checkOutDate']" type="date" class="form-control">
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="">Check Out Time</label>
+                    <input [(ngModel)]="booking['checkOutTime']" type="time" class="form-control" required>
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label for="">Room Type</label>
+                    <select [(ngModel)]="booking['roomType']"  class="form-control">
+                        <option value="AC">AC</option>
+                        <option value="NON-AC" selected>Non_AC</option>
+                    </select>
+            </div> 
+            <br/>
+                <div class="form-group">
+                    <label for="">No of Bookings</label>
+                    <input [(ngModel)]="booking['noOfBookings']" type="number" class="form-control">
+                </div>
+                <hr/>
+                <div class="form-group ">
+                    <button (click)="newbooking(booking)" type="submit" class="btn btn-success Button">Book</button>
+                    <button (click) ="onCancel()"style="margin-left: 50px;"class="btn btn-danger Button">Go Back</button>
+                    
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    </div>

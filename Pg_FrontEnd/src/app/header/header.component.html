@@ -1,0 +1,29 @@
+<nav onload="" class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a *ngIf="this.role == ''" class="navbar-brand" href="#">Paying Guest Portal</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <a  *ngIf="this.role == 'Owner'"  class="navbar-brand" href="/dashboard" style="color: green;">Owner Portal</a>
+        <li *ngIf="this.role == 'Owner'" class="nav-item"><a style="color: white;" routerLink="/dashboard" class="nav-link">Dashboard</a></li>
+        <li *ngIf="this.role == 'Owner'" class="nav-item"><a style="color: white;" routerLink="/signup" class="nav-link">Sign-up</a></li>
+        <li *ngIf="this.role == 'Owner'" class="nav-item"><a style="color: white;" routerLink="/pg" class="nav-link">PG-Add</a></li>
+        <li *ngIf="this.role == 'Owner'" class="nav-item"><a style="color: white;" routerLink="/listpg" class="nav-link">List of PG</a></li>
+      
+        <a  *ngIf="this.role == 'Customer'"  class="navbar-brand" href="/userdashboard" style="color: green;">Customer Portal</a>
+        <li *ngIf="this.role == 'Customer'" class="nav-item"><a style="color: white;" routerLink="/pglist" class="nav-link">Explore TMN</a></li>
+        <li *ngIf="this.role == 'Customer'" class="nav-item"><a style="color: white;" routerLink="/booking-list" class="nav-link">Bookings</a></li>
+        <!-- <li *ngIf="this.role == 'Customer'" class="nav-item"><a style="color: white; margin-left: 900px;border-radius: 6px;" routerLink="#" class="nav-link">Profile</a></li> -->
+
+        <a  *ngIf="this.role == 'Admin'"  class="navbar-brand" href="/admindashboard" style="color: green;">Admin Portal</a>
+        <li *ngIf="this.role == 'Admin'" class="nav-item"><a style="color: white;" routerLink="/allowners" class="nav-link">See Owners</a></li>
+        <li *ngIf="this.role == 'Admin'" class="nav-item"><a style="color: white;" routerLink="/adminbookings" class="nav-link">See Bookings</a></li>
+        <!-- <li *ngIf="this.role == 'Admin'" class="nav-item"><a style="color: white; margin-left: 900px;border-radius: 6px;" routerLink="#" class="nav-link">Profile</a></li> -->
+
+        <li (click)="onLogout()" class="nav-item">
+          <a *ngIf="this.role == 'Customer' || this.role == 'Admin' || this.role == 'Owner'" (click)="onLogout()" style="color: seagreen; size: 20px;" class="nav-link logbutton float-right">Logout</a>
+        </li>
+
+    </ul>
+    </div>
+  
+  </nav>

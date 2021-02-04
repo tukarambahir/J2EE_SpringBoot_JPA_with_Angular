@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="48.057" viewBox="0 0 38 48.057">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#00aeef}
+        </style>
+    </defs>
+    <g id="prefix__Group" transform="translate(-118 -81.641)">
+        <g id="prefix__Group_3734" data-name="Group 3734">
+            <path id="prefix__Compound_Path" d="M118 91.911V103.5a27.149 27.149 0 0 0 16.639 25.029h.011l2.7 1.165 2.349-1.024A27.2 27.2 0 0 0 156 103.78V91.9l-18.726-10.259zm23.543 1.895v7.3h7.3a.988.988 0 0 1 .964.991v7.1a.988.988 0 0 1-.964.991h-7.3v7.3a.988.988 0 0 1-.991.964h-7.1a.988.988 0 0 1-.991-.964v-7.3h-7.3a.988.988 0 0 1-.964-.991v-7.1a.988.988 0 0 1 .964-.991h7.3v-7.3a.988.988 0 0 1 .991-.964h7.1a.988.988 0 0 1 .991.964z" class="prefix__cls-1" data-name="Compound Path"/>
+            <path id="prefix__Path" d="M177 185.261v5.232h7.325a.917.917 0 0 1 .936.936v7.325h5.232v-7.325a.917.917 0 0 1 .936-.936h7.325v-5.232h-7.325a.917.917 0 0 1-.936-.936V177h-5.232v7.325a.917.917 0 0 1-.936.936z" class="prefix__cls-1" transform="translate(-50.877 -82.23)"/>
+            <circle id="prefix__Ellipse_2690" cx="15" cy="15" r="15" class="prefix__cls-1" data-name="Ellipse 2690" transform="translate(122 91.148)"/>
+            <path id="prefix__Path-2" fill="#fff" d="M177 184.2v4.56h6.383a.8.8 0 0 1 .816.816v6.383h4.56v-6.383a.8.8 0 0 1 .816-.816h6.383v-4.56h-6.383a.8.8 0 0 1-.816-.816V177H184.2v6.383a.8.8 0 0 1-.816.816z" data-name="Path" transform="translate(-49.479 -80.832)"/>
+        </g>
+    </g>
+</svg>

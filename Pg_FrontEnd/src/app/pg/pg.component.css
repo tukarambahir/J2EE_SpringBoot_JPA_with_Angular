@@ -1,0 +1,19 @@
+.form{
+    margin: 15px;
+    margin-top: 20px;
+    background-color:aliceblue;
+    padding: 15px;
+}
+
+h3{
+    margin: 15px; 
+    background-color: #061644;
+    color: #ECEEFE;
+    padding: 15px;
+}
+
+label{
+    color: black;
+    font-weight: bolder;
+}
+

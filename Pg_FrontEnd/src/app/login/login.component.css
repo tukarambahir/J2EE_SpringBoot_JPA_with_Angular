@@ -1,0 +1,36 @@
+body {
+    background-color: #e94d1e;
+}
+
+.border{
+    margin-top: 120px;
+    padding: 20px;
+    background-color: #f7c967 ;
+}
+
+.ieclass
+{
+    height: 40px;
+    width: 40px;
+}
+
+.fss
+{
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-right: 30px;
+    color: #48BFE7;
+    text-decoration-line: underline;
+}
+
+label
+{
+    font-size: large;
+}
+/* .form
+{
+    background-color: aqua;
+} */

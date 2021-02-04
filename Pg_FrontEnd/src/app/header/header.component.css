@@ -1,0 +1,17 @@
+.logbutton
+{
+    position: relative;
+    left: 720px;
+    size: 30px;
+}
+:hover
+{
+    cursor: pointer;
+}
+.nav-link
+{
+    font-size: larger;
+    text-decoration: underline;
+    text-decoration-color:gray;
+    text-decoration-thickness: 3px;
+}

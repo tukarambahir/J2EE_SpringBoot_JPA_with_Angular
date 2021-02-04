@@ -1,0 +1,181 @@
+.navbar{
+    background-color: rgb(20, 20, 20);
+}
+/* .logo{
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 20px;
+} */
+
+
+ *{
+   font-family: Arial, Helvetica, sans-serif;
+ }
+.nav-link:hover{
+
+  cursor: pointer;
+
+}
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ .backimg{
+   height: 1000px;
+   width: 100%;
+   position: fixed;
+ }
+ 
+ select{
+   width: 150px;
+   border-radius: 15px;
+   height: 50px;
+   text-align: center;
+   padding: 10px;
+ }
+ 
+ .btn{
+   background-color: orange;
+   color: white;
+   /* position: absolute; */
+   width: 140px;
+   height: 50px;
+   border-radius: 10px;
+ }
+
+ .nav-link:hover{
+
+   color: black;
+   transition: 1s;
+ }
+ .nav-link{
+   color: white;
+ }
+ .content{
+   margin-left:330px ;
+   position: absolute;
+   margin-top: 250px;
+   border-radius: 15px;
+   height: 100px;
+   opacity: 1.8;
+   margin-left: 500px;
+   background-color: rgba(211, 211, 211, 0.5);
+ }
+ .loc{
+   border-radius: 15px;
+ }
+ .content:hover{
+   height: 100px;
+ }
+ div{
+   display: inline-block;
+   text-align: center;
+   padding: 10px;  
+ }
+
+ .tag{
+
+   position: absolute;
+   font-size: 50px;
+   margin-left: 450px;
+   color: white;
+   margin-top: 150px;
+ }
+ optgroup{
+   background-color: rgb(207, 201, 201);
+   border-radius: 15px;
+   box-shadow:0 0 10px 4px white;
+ }
+
+ .info{
+   background-color: white;
+   width: 100%;
+ }
+.services{
+ background-color: lightskyblue;
+ width: 100%;
+ height: 120px;
+ font-size: 30px;
+ color: black;
+ line-height: 100px;
+}
+ .btn-service-code.learn:hover{
+
+   color: white;
+   background-color: #d0d30f;
+   box-shadow: 0 0 10px 4px rgb(25, 110, 150);
+ }
+
+
+
+
+
+
+
+body{
+  margin-top: 0px;
+margin-left: 0px;}
+
+
+
+
+ .btn-service-code {
+  border: solid #808080 2px;
+  padding: 5px;
+  background-color: transparent;
+  color: #808080;
+  border-radius: 6px;
+  height: 50px;
+  margin: 30px;
+
+}
+.footer{
+margin-top: -10px;
+width: 100px;
+}
+.btn-service-code:hover {
+  border: solid white;
+  color: white;
+}
+
+.copyright {
+  margin-top: 15px;
+  color: rgb(65, 65, 65);
+}
+
+ .footer ul{
+    list-style: none;
+    margin: 30px;
+
+} 
+.footer ul li{
+    margin-top: 10px;
+
+}
+.footer ul li a{
+
+    color:  #808080;
+}
+.social-logo {
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+  margin: 30px;
+}
+.footer{
+  background-color: rgb(49, 49, 49);
+} 
+
+
+.space{
+    margin-top: -200px;
+    height: 990px;
+margin-left:-10px ; 
+
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}

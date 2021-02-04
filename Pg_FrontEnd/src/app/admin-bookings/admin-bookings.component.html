@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="card-header">
+        <h3>All Bookings <img src="https://img.icons8.com/emoji/48/000000/bed-emoji.png"/></h3>
+    </div>
+
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+
+            <thead class="thead-dark">
+                <tr>
+                    <th>Serial No</th>
+                    <th>PG Name</th>
+                    <th>PG City</th>
+                    <th>No Of Bookings</th>
+                    <th>Room Type</th>
+                    <th>CheckIn-Date</th>
+                    <th>CheckOut-Date</th>
+                    <th>CheckIn-Time</th>
+                    <th>CheckOut-Time</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr style="text-align: center;" *ngFor = "let booking of ListOfBookings; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{booking.bookedPg.pgName}}</td>
+                    <td>{{booking.bookedPg.city}}</td>
+                    <td>{{booking['noOfBookings']}}</td>
+                    <td>{{booking['roomType']}}</td>
+                    <td>{{booking['checkInDate']}}</td>
+                    <td>{{booking['checkOutDate']}}</td>
+                    <td>{{booking['checkInTime']}}</td>
+                    <td>{{booking['checkOutTime']}}</td>
+                    <td>{{booking['confirmationStatus']}}</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+</div>

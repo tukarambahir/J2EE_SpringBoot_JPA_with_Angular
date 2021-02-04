@@ -1,0 +1,45 @@
+<div class="form">
+
+    <div class="row">
+
+        <span>
+        <span class="fss">Login Here</span>
+        <img class="ieclass" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgaWQ9IkZsYXQiPjxwYXRoIGQ9Im0yNjAuNTIgMzI5LjUzOWEyNCAyNCAwIDAgMCAzMy45NDEgMzMuOTQxbDkwLjUxLTkwLjUxYTI0IDI0IDAgMCAwIDAtMzMuOTQxbC05MC41MS05MC41MDlhMjQgMjQgMCAwIDAgLTMzLjk0MSAwIDI0IDI0IDAgMCAwIDAgMzMuOTQxbDQ5LjUzOSA0OS41MzloLTI2Mi4wNTlhMjQgMjQgMCAwIDAgLTI0IDI0IDI0IDI0IDAgMCAwIDI0IDI0aDI2Mi4wNTl6IiBmaWxsPSIjZjU3YzAxIi8+PHBhdGggZD0ibTQ0OCAyNGgtMjI0YTQwIDQwIDAgMCAwIC00MCA0MHYzMmEyNCAyNCAwIDAgMCA0OCAwdi0yNGgyMDh2MzY4aC0yMDh2LTI0YTI0IDI0IDAgMCAwIC00OCAwdjMyYTQwIDQwIDAgMCAwIDQwIDQwaDIyNGE0MCA0MCAwIDAgMCA0MC00MHYtMzg0YTQwIDQwIDAgMCAwIC00MC00MHoiIGZpbGw9IiNmZjk4MDAiLz48L2c+PC9zdmc+" />        
+        </span>
+        <div class="col-md-4"></div>
+
+        <div class="col-md-4 border">
+            <div class="form-group">
+                <label for="">Email</label>
+                <input [(ngModel)] = 'email' type="email" class="form-control" placeholder="email@test.com" required>
+            </div>
+        <br>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input [(ngModel)] = 'password' type="password" class="form-control" placeholder="Enter Your Password" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="">Role</label>
+                    <select [(ngModel)]="role"  class="form-control">
+                        <option value="Customer" selected>CUSTOMER</option>
+                        <option value="Owner">OWNER</option>
+                        <option value="Admin">ADMIN</option>
+                    </select> 
+            </div>
+            <br>
+       <hr>     
+            <div class="form-group">
+                <button (click) = "signin()" class="btn btn-success">Sign In</button>
+                &nbsp;&nbsp; 
+                <a class="btn btn-info float-right" routerLink="/signup">Sign-Up</a>
+            </div>
+
+        </div>
+    
+        <div class="col-md-4"></div>
+    
+    </div>
+
+</div>
+    
